@@ -4,6 +4,7 @@ public class Main {
 
         task1();
         task2();
+        task3();
 
     }// End of main
 
@@ -51,6 +52,38 @@ public class Main {
         for (int i = 0; i < arrayFloat.length; i++) {
             System.out.print(arrayFloat[i]);
             if (i < arrayFloat.length - 1)
+                System.out.print(",");
+        }
+    }// End of task
+
+    public static void task3() {
+
+        System.out.println();
+        System.out.println("Задача 3");
+
+        int[] arrayInt = new int[3];
+        arrayInt[0] = 1;
+        arrayInt[1] = 2;
+        arrayInt[2] = 3;
+        for (int i = arrayInt.length - 1; i >= 0; i--) {
+            System.out.print(arrayInt[i]);
+            if (i != 0)
+                System.out.print(",");
+        }
+        System.out.println();
+
+        double[] arrayDouble = {1.57, 7.654, 9.968};
+        for (int i = arrayDouble.length - 1; i >= 0; i--) {
+            System.out.print(arrayDouble[i]);
+            if (i != 0)
+                System.out.print(",");
+        }
+        System.out.println();
+
+        float[] arrayFloat = {1.57f, 3.14f, 6.28f};
+        for (int i = arrayFloat.length - 1; i >= 0; i--) {
+            System.out.print(arrayFloat[i]);
+            if (i != 0)
                 System.out.print(",");
         }
     }// End of task
